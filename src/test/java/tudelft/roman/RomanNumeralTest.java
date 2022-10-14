@@ -33,4 +33,14 @@ public class RomanNumeralTest {
         int result = roman.convert("XLIV");
         Assertions.assertEquals(44, result);
     }
+
+    @Test
+    public void Kevin() {
+        RomanNumeral roman = new RomanNumeral();
+        int result = roman.convert("MLXIX");
+        Assertions.assertEquals(1069, result);
+
+    }
+
+
 }

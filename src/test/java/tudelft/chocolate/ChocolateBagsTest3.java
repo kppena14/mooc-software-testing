@@ -3,6 +3,7 @@ package tudelft.chocolate;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+import tudelft.chocolate.ChocolateBags;
 
 public class ChocolateBagsTest3 {
     @ParameterizedTest(name = "{0}: ({1}, {2}, {3}) = {4}")

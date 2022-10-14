@@ -3,6 +3,7 @@ package tudelft.chocolate;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+import tudelft.chocolate.ChocolateBags;
 
 public class ChocolateBagsTest {
     @ParameterizedTest(name = "small={0}, big={1}, total={2}, result={3}")
@@ -29,8 +30,8 @@ public class ChocolateBagsTest {
         Assertions.assertEquals(expectedResult, result);
     }
 
-    @ParameterizedTest(name = "small={0}, big={1}, total={2}, result={3}")
-    @CsvSource({ "4,2,3,3", "3,2,3,3", "2,2,3,-1", "1,2,3,-1" })
+    @ParameterizedTest(name = "SMALL = {0}, BIG = {1}, TOTAL = {2}, RESULT = {3}")
+    @CsvSource({ "5,2,3,3", "4,2,3,3", "3,2,3,3", "2,2,3,-1", "1,2,3,-1" })
     public void onlySmallBars(int small, int big, int total, int expectedResult) {
         int result = new ChocolateBags().calculate(small, big, total);
         Assertions.assertEquals(expectedResult, result);

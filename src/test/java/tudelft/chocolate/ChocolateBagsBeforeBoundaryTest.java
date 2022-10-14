@@ -2,6 +2,7 @@ package tudelft.chocolate;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import tudelft.chocolate.ChocolateBags;
 
 public class ChocolateBagsBeforeBoundaryTest {
     @Test
